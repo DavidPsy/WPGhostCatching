@@ -210,7 +210,7 @@
 		2DA14B0018D82DF90025FAC9 /* LICENSE_Chipmunk.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2DA14AFF18D82DF90025FAC9 /* LICENSE_Chipmunk.txt */; };
 		2DA14B0418D82DF90025FAC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B0318D82DF90025FAC9 /* main.m */; };
 		2DA14B0818D82DF90025FAC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B0718D82DF90025FAC9 /* AppDelegate.m */; };
-		2DA14B0B18D82DF90025FAC9 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B0A18D82DF90025FAC9 /* HelloWorldScene.m */; };
+		2DA14B0B18D82DF90025FAC9 /* WPHomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B0A18D82DF90025FAC9 /* WPHomeScene.m */; };
 		2DA14B0E18D82DF90025FAC9 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B0D18D82DF90025FAC9 /* IntroScene.m */; };
 		2DA14B2718D860AC0025FAC9 /* MatchmakingServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B2418D860AC0025FAC9 /* MatchmakingServer.m */; };
 		2DA14B2818D860AC0025FAC9 /* MatchmakingClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B2618D860AC0025FAC9 /* MatchmakingClient.m */; };
@@ -224,6 +224,9 @@
 		2DA14B5418D861400025FAC9 /* WPHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B4E18D861400025FAC9 /* WPHomeVC.m */; };
 		2DA14B5918D8617E0025FAC9 /* DSActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B5618D8617E0025FAC9 /* DSActivityView.m */; };
 		2DA14B5A18D8617E0025FAC9 /* MTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B5818D8617E0025FAC9 /* MTAlertView.m */; };
+		2DA14B5D18D869950025FAC9 /* WPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B5C18D869950025FAC9 /* WPButton.m */; };
+		2DA14B6018D86C600025FAC9 /* WPMasterScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B5F18D86C600025FAC9 /* WPMasterScene.m */; };
+		2DA14B6318D86C730025FAC9 /* WPJoinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B6218D86C730025FAC9 /* WPJoinScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -661,8 +664,8 @@
 		2DA14B0318D82DF90025FAC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		2DA14B0618D82DF90025FAC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		2DA14B0718D82DF90025FAC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		2DA14B0918D82DF90025FAC9 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		2DA14B0A18D82DF90025FAC9 /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
+		2DA14B0918D82DF90025FAC9 /* WPHomeScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WPHomeScene.h; path = Classes/WPHomeScene.h; sourceTree = "<group>"; };
+		2DA14B0A18D82DF90025FAC9 /* WPHomeScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WPHomeScene.m; path = Classes/WPHomeScene.m; sourceTree = "<group>"; };
 		2DA14B0C18D82DF90025FAC9 /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
 		2DA14B0D18D82DF90025FAC9 /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
 		2DA14B2318D860AC0025FAC9 /* MatchmakingServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchmakingServer.h; sourceTree = "<group>"; };
@@ -690,6 +693,12 @@
 		2DA14B5618D8617E0025FAC9 /* DSActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSActivityView.m; sourceTree = "<group>"; };
 		2DA14B5718D8617E0025FAC9 /* MTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAlertView.h; sourceTree = "<group>"; };
 		2DA14B5818D8617E0025FAC9 /* MTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAlertView.m; sourceTree = "<group>"; };
+		2DA14B5B18D869950025FAC9 /* WPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPButton.h; sourceTree = "<group>"; };
+		2DA14B5C18D869950025FAC9 /* WPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPButton.m; sourceTree = "<group>"; };
+		2DA14B5E18D86C600025FAC9 /* WPMasterScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPMasterScene.h; sourceTree = "<group>"; };
+		2DA14B5F18D86C600025FAC9 /* WPMasterScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPMasterScene.m; sourceTree = "<group>"; };
+		2DA14B6118D86C730025FAC9 /* WPJoinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPJoinScene.h; sourceTree = "<group>"; };
+		2DA14B6218D86C730025FAC9 /* WPJoinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPJoinScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1583,8 +1592,8 @@
 				2DA14B2218D8607C0025FAC9 /* UI */,
 				2DA14B0618D82DF90025FAC9 /* AppDelegate.h */,
 				2DA14B0718D82DF90025FAC9 /* AppDelegate.m */,
-				2DA14B0918D82DF90025FAC9 /* HelloWorldScene.h */,
-				2DA14B0A18D82DF90025FAC9 /* HelloWorldScene.m */,
+				2DA14B0918D82DF90025FAC9 /* WPHomeScene.h */,
+				2DA14B0A18D82DF90025FAC9 /* WPHomeScene.m */,
 				2DA14B0C18D82DF90025FAC9 /* IntroScene.h */,
 				2DA14B0D18D82DF90025FAC9 /* IntroScene.m */,
 			);
@@ -1603,6 +1612,8 @@
 				2DA14B2518D860AC0025FAC9 /* MatchmakingClient.h */,
 				2DA14B2618D860AC0025FAC9 /* MatchmakingClient.m */,
 				2DA14B2918D860DE0025FAC9 /* WPMacro.h */,
+				2DA14B5B18D869950025FAC9 /* WPButton.h */,
+				2DA14B5C18D869950025FAC9 /* WPButton.m */,
 			);
 			name = Core;
 			path = Classes/Core;
@@ -1623,6 +1634,10 @@
 		2DA14B2218D8607C0025FAC9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2DA14B5E18D86C600025FAC9 /* WPMasterScene.h */,
+				2DA14B5F18D86C600025FAC9 /* WPMasterScene.m */,
+				2DA14B6118D86C730025FAC9 /* WPJoinScene.h */,
+				2DA14B6218D86C730025FAC9 /* WPJoinScene.m */,
 			);
 			name = UI;
 			path = Classes/UI;
@@ -1787,6 +1802,7 @@
 				2DA14B2F18D8610C0025FAC9 /* WPDataCenter.m in Sources */,
 				2DA14B2818D860AC0025FAC9 /* MatchmakingClient.m in Sources */,
 				2DA149BD18D82DF70025FAC9 /* CGPointExtension.m in Sources */,
+				2DA14B5D18D869950025FAC9 /* WPButton.m in Sources */,
 				2DA14A4818D82DF80025FAC9 /* CCTextField.m in Sources */,
 				2DA149B318D82DF70025FAC9 /* CCProfiling.m in Sources */,
 				2DA149DA18D82DF70025FAC9 /* OALAction.m in Sources */,
@@ -1808,6 +1824,7 @@
 				2DA149F618D82DF80025FAC9 /* ALBuffer.m in Sources */,
 				2DA149C318D82DF70025FAC9 /* NSThread+performBlock.m in Sources */,
 				2DA1494E18D82DF70025FAC9 /* CCShaderCache.m in Sources */,
+				2DA14B6018D86C600025FAC9 /* WPMasterScene.m in Sources */,
 				2DA14A8B18D82DF80025FAC9 /* CCBSequenceProperty.m in Sources */,
 				2DA14B0E18D82DF90025FAC9 /* IntroScene.m in Sources */,
 				2DA1499218D82DF70025FAC9 /* CCGLView.m in Sources */,
@@ -1851,7 +1868,7 @@
 				2DA1495118D82DF70025FAC9 /* ccShaders.m in Sources */,
 				2DA14A6518D82DF80025FAC9 /* matrix.c in Sources */,
 				2DA1497718D82DF70025FAC9 /* CCTiledMapLayer.m in Sources */,
-				2DA14B0B18D82DF90025FAC9 /* HelloWorldScene.m in Sources */,
+				2DA14B0B18D82DF90025FAC9 /* WPHomeScene.m in Sources */,
 				2DA14A6B18D82DF80025FAC9 /* neon_matrix_impl.c in Sources */,
 				2DA148F018D82DF60025FAC9 /* CCLabelTTF.m in Sources */,
 				2DA149A518D82DF70025FAC9 /* NSEvent+CC.m in Sources */,
@@ -1897,6 +1914,7 @@
 				2DA1493918D82DF70025FAC9 /* CCScene.m in Sources */,
 				2DA1496718D82DF70025FAC9 /* CCTexture.m in Sources */,
 				2DA149F918D82DF80025FAC9 /* ALCaptureDevice.m in Sources */,
+				2DA14B6318D86C730025FAC9 /* WPJoinScene.m in Sources */,
 				2DA1493518D82DF70025FAC9 /* CCResponderManager.m in Sources */,
 				2DA148CD18D82DF60025FAC9 /* CCConfiguration.m in Sources */,
 				2DA14A1018D82DF80025FAC9 /* ALWrapper.m in Sources */,

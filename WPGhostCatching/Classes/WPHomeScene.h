@@ -16,11 +16,11 @@
 /**
  *  The main scene
  */
-@interface HelloWorldScene : CCScene
+@interface WPHomeScene : CCScene
 
 // -----------------------------------------------------------------------
 
-+ (HelloWorldScene *)scene;
++ (WPHomeScene *)scene;
 - (id)init;
 
 // -----------------------------------------------------------------------

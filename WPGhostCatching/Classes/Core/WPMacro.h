@@ -13,6 +13,8 @@
 #import "DSActivityView.h"
 #import "cocos2d.h"
 
+#import "WPButton.h"
+
 #define Font(x) [UIFont systemFontOfSize:x]
 #define BoldFont(x) [UIFont boldSystemFontOfSize:x]
 

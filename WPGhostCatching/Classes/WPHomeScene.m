@@ -7,14 +7,14 @@
 //
 // -----------------------------------------------------------------------
 
-#import "HelloWorldScene.h"
+#import "WPHomeScene.h"
 #import "IntroScene.h"
 
 // -----------------------------------------------------------------------
 #pragma mark - HelloWorldScene
 // -----------------------------------------------------------------------
 
-@implementation HelloWorldScene
+@implementation WPHomeScene
 {
     CCSprite *_sprite;
 }
@@ -23,7 +23,7 @@
 #pragma mark - Create & Destroy
 // -----------------------------------------------------------------------
 
-+ (HelloWorldScene *)scene
++ (WPHomeScene *)scene
 {
     return [[self alloc] init];
 }
@@ -53,10 +53,22 @@
     [_sprite runAction:[CCActionRepeatForever actionWithAction:actionSpin]];
     
     // Create a back button
-    CCButton *backButton = [CCButton buttonWithTitle:@"[ Menu ]" fontName:@"Verdana-Bold" fontSize:18.0f];
+    WPButton *masterButton = [WPButton buttonWithTitle:@"[ Menu ]" fontName:@"Verdana-Bold" fontSize:18.0f];
+    masterButton.positionType = CCPositionTypeNormalized;
+    masterButton.position = ccp(0.85f, 0.95f); // Top Right of screen
+    [masterButton setTapBlock:^{
+        [[CCDirector sharedDirector] replaceScene:[IntroScene scene]
+                                   withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionRight duration:1.0f]];
+    }];
+    [self addChild:masterButton];
+    
+    WPButton *backButton = [WPButton buttonWithTitle:@"[ Menu ]" fontName:@"Verdana-Bold" fontSize:18.0f];
     backButton.positionType = CCPositionTypeNormalized;
     backButton.position = ccp(0.85f, 0.95f); // Top Right of screen
-    [backButton setTarget:self selector:@selector(onBackClicked:)];
+    [backButton setTapBlock:^{
+        [[CCDirector sharedDirector] replaceScene:[IntroScene scene]
+                                   withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionRight duration:1.0f]];
+    }];
     [self addChild:backButton];
 
     // done
@@ -109,15 +121,5 @@
 }
 
 // -----------------------------------------------------------------------
-#pragma mark - Button Callbacks
-// -----------------------------------------------------------------------
 
-- (void)onBackClicked:(id)sender
-{
-    // back to intro scene with transition
-    [[CCDirector sharedDirector] replaceScene:[IntroScene scene]
-                               withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionRight duration:1.0f]];
-}
-
-// -----------------------------------------------------------------------
 @end
