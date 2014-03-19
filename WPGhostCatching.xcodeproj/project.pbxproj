@@ -227,6 +227,9 @@
 		2DA14B5D18D869950025FAC9 /* WPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B5C18D869950025FAC9 /* WPButton.m */; };
 		2DA14B6018D86C600025FAC9 /* WPMasterScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B5F18D86C600025FAC9 /* WPMasterScene.m */; };
 		2DA14B6318D86C730025FAC9 /* WPJoinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA14B6218D86C730025FAC9 /* WPJoinScene.m */; };
+		2DCD580318D94247009EF82B /* WPPlayerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD580218D94247009EF82B /* WPPlayerScene.m */; };
+		2DCD580618D9425D009EF82B /* WPHostScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD580518D9425D009EF82B /* WPHostScene.m */; };
+		2DCD580918D9426F009EF82B /* WPBaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD580818D9426F009EF82B /* WPBaseScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -699,6 +702,12 @@
 		2DA14B5F18D86C600025FAC9 /* WPMasterScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPMasterScene.m; sourceTree = "<group>"; };
 		2DA14B6118D86C730025FAC9 /* WPJoinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPJoinScene.h; sourceTree = "<group>"; };
 		2DA14B6218D86C730025FAC9 /* WPJoinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPJoinScene.m; sourceTree = "<group>"; };
+		2DCD580118D94247009EF82B /* WPPlayerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPlayerScene.h; sourceTree = "<group>"; };
+		2DCD580218D94247009EF82B /* WPPlayerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPlayerScene.m; sourceTree = "<group>"; };
+		2DCD580418D9425D009EF82B /* WPHostScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHostScene.h; sourceTree = "<group>"; };
+		2DCD580518D9425D009EF82B /* WPHostScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHostScene.m; sourceTree = "<group>"; };
+		2DCD580718D9426F009EF82B /* WPBaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBaseScene.h; sourceTree = "<group>"; };
+		2DCD580818D9426F009EF82B /* WPBaseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBaseScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1638,6 +1647,12 @@
 				2DA14B5F18D86C600025FAC9 /* WPMasterScene.m */,
 				2DA14B6118D86C730025FAC9 /* WPJoinScene.h */,
 				2DA14B6218D86C730025FAC9 /* WPJoinScene.m */,
+				2DCD580118D94247009EF82B /* WPPlayerScene.h */,
+				2DCD580218D94247009EF82B /* WPPlayerScene.m */,
+				2DCD580418D9425D009EF82B /* WPHostScene.h */,
+				2DCD580518D9425D009EF82B /* WPHostScene.m */,
+				2DCD580718D9426F009EF82B /* WPBaseScene.h */,
+				2DCD580818D9426F009EF82B /* WPBaseScene.m */,
 			);
 			name = UI;
 			path = Classes/UI;
@@ -1781,6 +1796,7 @@
 				2DA148C918D82DF60025FAC9 /* CCClippingNode.m in Sources */,
 				2DA1495C18D82DF70025FAC9 /* CCSpriteBatchNode.m in Sources */,
 				2DA1498018D82DF70025FAC9 /* CCTransition.m in Sources */,
+				2DCD580918D9426F009EF82B /* WPBaseScene.m in Sources */,
 				2DA1495F18D82DF70025FAC9 /* CCSpriteFrame.m in Sources */,
 				2DA148F318D82DF60025FAC9 /* CCNodeColor.m in Sources */,
 				2DA149CC18D82DF70025FAC9 /* TransformUtils.m in Sources */,
@@ -1891,6 +1907,7 @@
 				2DA149C018D82DF70025FAC9 /* NSAttributedString+CCAdditions.m in Sources */,
 				2DA14A8218D82DF80025FAC9 /* CCBKeyframe.m in Sources */,
 				2DA14A3C18D82DF80025FAC9 /* CCControlTextureFactory.m in Sources */,
+				2DCD580318D94247009EF82B /* WPPlayerScene.m in Sources */,
 				2DA148C118D82DF60025FAC9 /* CCAnimationCache.m in Sources */,
 				2DA14A4518D82DF80025FAC9 /* CCTableView.m in Sources */,
 				2DA14B0818D82DF90025FAC9 /* AppDelegate.m in Sources */,
@@ -1902,6 +1919,7 @@
 				2DA149E318D82DF80025FAC9 /* OALUtilityActions.m in Sources */,
 				2DA1498E18D82DF70025FAC9 /* CCES2Renderer.m in Sources */,
 				2DA14A5E18D82DF80025FAC9 /* aabb.c in Sources */,
+				2DCD580618D9425D009EF82B /* WPHostScene.m in Sources */,
 				2DA14A8818D82DF80025FAC9 /* CCBsequence.m in Sources */,
 				2DA14B5418D861400025FAC9 /* WPHomeVC.m in Sources */,
 				2DA14B4F18D861400025FAC9 /* JoinViewController.m in Sources */,

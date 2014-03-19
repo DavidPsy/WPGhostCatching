@@ -2,7 +2,7 @@
 //  MTAlertView.h
 //  MTFramework
 //
-//  Created by 李 帅 on 12-5-21.
+//  Created by psy on 14-3-18.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
