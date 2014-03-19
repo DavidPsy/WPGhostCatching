@@ -7,11 +7,22 @@
 //
 
 #import "WPHostScene.h"
+#import "WPHomeScene.h"
 
 @implementation WPHostScene
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        WPButton *backBtn = makeButton(@"back", WPFontNormal, ccp(0.2, 0.2), ^{
+            sceneBack([[WPHomeScene alloc] init]);
+        });
+        [self addChild:backBtn];
+    }
+    return self;
+}
+
 - (void)onEnter {
-    
     
 }
 

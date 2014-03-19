@@ -24,4 +24,8 @@
     return self;
 }
 
++(instancetype)scene {
+    return [[self alloc] init];
+}
+
 @end

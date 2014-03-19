@@ -10,23 +10,20 @@
 #import "WPHomeScene.h"
 #import "IntroScene.h"
 
+#import "WPQuickComponents.h"
+#import "WPHostScene.h"
+#import "WPPlayerScene.h"
+
 // -----------------------------------------------------------------------
 #pragma mark - HelloWorldScene
 // -----------------------------------------------------------------------
 
 @implementation WPHomeScene
-{
-    CCSprite *_sprite;
-}
 
 // -----------------------------------------------------------------------
 #pragma mark - Create & Destroy
 // -----------------------------------------------------------------------
 
-+ (WPHomeScene *)scene
-{
-    return [[self alloc] init];
-}
 
 // -----------------------------------------------------------------------
 
@@ -36,42 +33,17 @@
     self = [super init];
     if (!self) return(nil);
     
-    // Enable touch handling on scene node
-    self.userInteractionEnabled = YES;
     
-    // Create a colored background (Dark Grey)
-    CCNodeColor *background = [CCNodeColor nodeWithColor:[CCColor colorWithRed:0.2f green:0.2f blue:0.2f alpha:1.0f]];
-    [self addChild:background];
+    WPButton *hostBtn = makeButton(@"Host", WPFontNormal, ccp(0.5f, 0.3f), ^{
+        sceneForward([[WPHostScene alloc] init]);
+    });
+    [self addChild:hostBtn];
     
-    // Add a sprite
-    _sprite = [CCSprite spriteWithImageNamed:@"Icon-72.png"];
-    _sprite.position  = ccp(self.contentSize.width/2,self.contentSize.height/2);
-    [self addChild:_sprite];
-    
-    // Animate sprite with action
-    CCActionRotateBy* actionSpin = [CCActionRotateBy actionWithDuration:1.5f angle:360];
-    [_sprite runAction:[CCActionRepeatForever actionWithAction:actionSpin]];
-    
-    // Create a back button
-    WPButton *masterButton = [WPButton buttonWithTitle:@"[ Menu ]" fontName:@"Verdana-Bold" fontSize:18.0f];
-    masterButton.positionType = CCPositionTypeNormalized;
-    masterButton.position = ccp(0.85f, 0.95f); // Top Right of screen
-    [masterButton setTapBlock:^{
-        [[CCDirector sharedDirector] replaceScene:[IntroScene scene]
-                                   withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionRight duration:1.0f]];
-    }];
-    [self addChild:masterButton];
-    
-    WPButton *backButton = [WPButton buttonWithTitle:@"[ Menu ]" fontName:@"Verdana-Bold" fontSize:18.0f];
-    backButton.positionType = CCPositionTypeNormalized;
-    backButton.position = ccp(0.85f, 0.95f); // Top Right of screen
-    [backButton setTapBlock:^{
-        [[CCDirector sharedDirector] replaceScene:[IntroScene scene]
-                                   withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionRight duration:1.0f]];
-    }];
-    [self addChild:backButton];
+    WPButton *playerBtn = makeButton(@"Player", WPFontNormal, ccp(0.5f, 0.6f), ^{
+        sceneForward([[WPPlayerScene alloc] init]);
+    });
+    [self addChild:playerBtn];
 
-    // done
 	return self;
 }
 
@@ -112,12 +84,12 @@
 -(void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     CGPoint touchLoc = [touch locationInNode:self];
     
-    // Log touch location
-    CCLOG(@"Move sprite to @ %@",NSStringFromCGPoint(touchLoc));
-    
-    // Move our sprite to touch location
-    CCActionMoveTo *actionMove = [CCActionMoveTo actionWithDuration:1.0f position:touchLoc];
-    [_sprite runAction:actionMove];
+//    // Log touch location
+//    CCLOG(@"Move sprite to @ %@",NSStringFromCGPoint(touchLoc));
+//    
+//    // Move our sprite to touch location
+//    CCActionMoveTo *actionMove = [CCActionMoveTo actionWithDuration:1.0f position:touchLoc];
+//    [_sprite runAction:actionMove];
 }
 
 // -----------------------------------------------------------------------

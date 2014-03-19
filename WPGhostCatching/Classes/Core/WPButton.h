@@ -8,8 +8,10 @@
 
 #import "CCButton.h"
 
+typedef void(^WPTapBlock)();
+
 @interface WPButton : CCButton
 
-@property (nonatomic, copy) void(^tapBlock)();
+@property (nonatomic, copy) WPTapBlock tapBlock;
 
 @end

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5CF58DF2-547C-423B-92FF-879EF21D33BE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WPGhostCatching</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>76E389F1-FBC0-4A33-B6C8-B01A1FDCD3DC</key>
+		<string>https://github.com/DavidPsy/WPGhostCatching.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WPGhostCatching.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>76E389F1-FBC0-4A33-B6C8-B01A1FDCD3DC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DavidPsy/WPGhostCatching.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>76E389F1-FBC0-4A33-B6C8-B01A1FDCD3DC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>76E389F1-FBC0-4A33-B6C8-B01A1FDCD3DC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WPGhostCatching</string>
+		</dict>
+	</array>
+</dict>
+</plist>

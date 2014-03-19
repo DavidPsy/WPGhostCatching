@@ -8,19 +8,22 @@
 
 #import "WPButton.h"
 
-@implementation WPButton
-
-- (id)init {
-    self = [super init];
-    if (self) {
-        [self setTarget:self selector:@selector(onClicked)];
-    }
-    return self;
+@implementation WPButton {
+    BOOL _enableTap;
 }
 
 - (void)onClicked {
     if (_tapBlock) {
         _tapBlock();
+    }
+}
+
+- (void)setTapBlock:(WPTapBlock)tapBlock {
+    _tapBlock = [tapBlock copy];
+    
+    if (!_enableTap) {
+        _enableTap = YES;
+        [self setTarget:self selector:@selector(onClicked)];
     }
 }
 

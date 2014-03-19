@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D48267C18D983FE00BE8873 /* WPQuickComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D48267B18D983FE00BE8873 /* WPQuickComponents.m */; };
 		2DA1485F18D82DF50025FAC9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA1485E18D82DF50025FAC9 /* QuartzCore.framework */; };
 		2DA1486118D82DF50025FAC9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA1486018D82DF50025FAC9 /* OpenGLES.framework */; };
 		2DA1486318D82DF50025FAC9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA1486218D82DF50025FAC9 /* OpenAL.framework */; };
@@ -242,6 +243,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D48267A18D983FE00BE8873 /* WPQuickComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPQuickComponents.h; sourceTree = "<group>"; };
+		2D48267B18D983FE00BE8873 /* WPQuickComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPQuickComponents.m; sourceTree = "<group>"; };
 		2DA1485B18D82DF50025FAC9 /* WPGhostCatching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPGhostCatching.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA1485E18D82DF50025FAC9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2DA1486018D82DF50025FAC9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1645,6 +1648,8 @@
 				2DCD581018D968DA009EF82B /* Player */,
 				2DCD580718D9426F009EF82B /* WPBaseScene.h */,
 				2DCD580818D9426F009EF82B /* WPBaseScene.m */,
+				2D48267A18D983FE00BE8873 /* WPQuickComponents.h */,
+				2D48267B18D983FE00BE8873 /* WPQuickComponents.m */,
 			);
 			name = UI;
 			path = Classes/UI;
@@ -1905,6 +1910,7 @@
 				2DA1490918D82DF60025FAC9 /* CCParallaxNode.m in Sources */,
 				2DA14B2718D860AC0025FAC9 /* MatchmakingServer.m in Sources */,
 				2DA14A7118D82DF80025FAC9 /* ray2.c in Sources */,
+				2D48267C18D983FE00BE8873 /* WPQuickComponents.m in Sources */,
 				2DA149ED18D82DF80025FAC9 /* OALAudioTracks.m in Sources */,
 				2DA149EA18D82DF80025FAC9 /* OALAudioTrackNotifications.m in Sources */,
 				2DA14A6F18D82DF80025FAC9 /* quaternion.c in Sources */,
