@@ -10,11 +10,11 @@
 
 @interface WPRoleScrollView : UIScrollView
 
-@property (nonatomic, strong) NSArray *playerPeerIDs;
-@property (nonatomic, assign) BOOL canClickUser;
-@property (nonatomic, copy) void(^completeBlock)(NSString *peerID);
-
-- (void)setRoles:(NSArray *)rolesArray;
-- (void)killUserAtPeerID:(NSString *)peerID;
+//@property (nonatomic, strong) NSArray *playerPeerIDs;
+//@property (nonatomic, assign) BOOL canClickUser;
+//@property (nonatomic, copy) void(^completeBlock)(NSString *peerID);
+//
+//- (void)setRoles:(NSArray *)rolesArray;
+//- (void)killUserAtPeerID:(NSString *)peerID;
 
 @end

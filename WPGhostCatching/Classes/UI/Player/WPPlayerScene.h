@@ -1,13 +1,13 @@
 //
-//  WPHostScene.m
+//  WPPlayerScene.h
 //  WPGhostCatching
 //
 //  Created by psy on 14-3-19.
 //  Copyright (c) 2014年 psy. All rights reserved.
 //
 
-#import "WPHostScene.h"
+#import "WPBaseScene.h"
 
-@implementation WPHostScene
+@interface WPPlayerScene : WPBaseScene
 
 @end
