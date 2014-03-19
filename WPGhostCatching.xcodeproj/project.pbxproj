@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D48267C18D983FE00BE8873 /* WPQuickComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D48267B18D983FE00BE8873 /* WPQuickComponents.m */; };
+		2D48268C18D9A6D700BE8873 /* WPPlayersList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D48268B18D9A6D700BE8873 /* WPPlayersList.m */; };
 		2DA1485F18D82DF50025FAC9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA1485E18D82DF50025FAC9 /* QuartzCore.framework */; };
 		2DA1486118D82DF50025FAC9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA1486018D82DF50025FAC9 /* OpenGLES.framework */; };
 		2DA1486318D82DF50025FAC9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA1486218D82DF50025FAC9 /* OpenAL.framework */; };
@@ -245,6 +246,8 @@
 /* Begin PBXFileReference section */
 		2D48267A18D983FE00BE8873 /* WPQuickComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPQuickComponents.h; sourceTree = "<group>"; };
 		2D48267B18D983FE00BE8873 /* WPQuickComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPQuickComponents.m; sourceTree = "<group>"; };
+		2D48268A18D9A6D700BE8873 /* WPPlayersList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPlayersList.h; sourceTree = "<group>"; };
+		2D48268B18D9A6D700BE8873 /* WPPlayersList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPlayersList.m; sourceTree = "<group>"; };
 		2DA1485B18D82DF50025FAC9 /* WPGhostCatching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPGhostCatching.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA1485E18D82DF50025FAC9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2DA1486018D82DF50025FAC9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1650,6 +1653,8 @@
 				2DCD580818D9426F009EF82B /* WPBaseScene.m */,
 				2D48267A18D983FE00BE8873 /* WPQuickComponents.h */,
 				2D48267B18D983FE00BE8873 /* WPQuickComponents.m */,
+				2D48268A18D9A6D700BE8873 /* WPPlayersList.h */,
+				2D48268B18D9A6D700BE8873 /* WPPlayersList.m */,
 			);
 			name = UI;
 			path = Classes/UI;
@@ -1804,6 +1809,7 @@
 				2DA14A6918D82DF80025FAC9 /* mat4.c in Sources */,
 				2DA148C518D82DF60025FAC9 /* CCAtlasNode.m in Sources */,
 				2DA14A1318D82DF80025FAC9 /* OpenALManager.m in Sources */,
+				2D48268C18D9A6D700BE8873 /* WPPlayersList.m in Sources */,
 				2DA14A1F18D82DF80025FAC9 /* IOSVersion.m in Sources */,
 				2DA148D418D82DF60025FAC9 /* CCDirector.m in Sources */,
 				2DA14A3F18D82DF80025FAC9 /* CCScrollView.m in Sources */,

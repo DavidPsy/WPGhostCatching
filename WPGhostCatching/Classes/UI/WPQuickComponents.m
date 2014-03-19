@@ -13,12 +13,12 @@
 #pragma mark -
 void sceneForward(CCScene *toScene) {
     [[CCDirector sharedDirector] replaceScene:toScene
-                               withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionRight duration:1.0f]];
+                               withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionRight duration:0.3f]];
 }
 
 void sceneBack(CCScene *toScene) {
     [[CCDirector sharedDirector] replaceScene:toScene
-                               withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionLeft duration:1.0f]];
+                               withTransition:[CCTransition transitionPushWithDirection:CCTransitionDirectionLeft duration:0.3f]];
 }
 
 #pragma mark - 
@@ -29,4 +29,23 @@ WPButton* makeButton(NSString *title, float fontSize,CGPoint pos,WPTapBlock blk)
     btn.position = pos;
     btn.tapBlock = blk;
     return btn;
+}
+
+#pragma mark - 
+
+CCNode* makeLayer() {
+    CCNode *n = [CCNode node];
+    n.contentSizeType = CCSizeTypeNormalized;
+    n.contentSize = CGSizeMake(1, 1);
+    
+//    CCSprite9Slice* headerBg = [CCSprite9Slice spriteWithImageNamed:@"Interface/header.png"];
+//    headerBg.positionType = CCPositionTypeMake(CCPositionUnitPoints, CCPositionUnitPoints, CCPositionReferenceCornerTopLeft);
+//    headerBg.position = ccp(0,0);
+//    headerBg.anchorPoint = ccp(0,1);
+//    headerBg.contentSizeType = CCSizeTypeMake(CCSizeUnitNormalized, CCSizeUnitPoints);
+//    headerBg.contentSize = CGSizeMake(1, 44);
+//    
+//    [n addChild:headerBg];
+    
+    return n;
 }

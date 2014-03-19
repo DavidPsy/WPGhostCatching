@@ -22,3 +22,17 @@ void sceneBack(CCScene *toScene);
 WPButton* makeButton(NSString *title, float fontSize,CGPoint pos,WPTapBlock blk);
 
 
+#pragma mark - node
+
+CCNode* makeLayer();
+
+#pragma mark - code snap relative to my Xcode
+
+/**
+ blkDefine
+ blkProperty
+ blkMethod
+ 
+ */
+
+
